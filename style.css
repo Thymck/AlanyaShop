@@ -190,6 +190,26 @@ h4 {
 }
 
 /* Portfolio */
+
+.product-title h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: brown;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.product-title h2::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: brown;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +226,7 @@ h4 {
 .portfolio-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
   padding-left: 10px;
 }
 
@@ -421,5 +441,13 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
