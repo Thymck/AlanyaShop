@@ -30,7 +30,7 @@ li {
 }
 
 .header {
-  background-image: url("avacado1.jpg");
+  background-image: url("./pictures/avacado1.jpg");
   background-position: center;
   background-size: 80%;
   background-attachment: fixed;
@@ -364,7 +364,7 @@ h4 {
     font-size: 15px;
   }
   .header {
-    background-image: url("avacado1.jpg");
+    background-image: url("./pictures/avacado1.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: 200%;
