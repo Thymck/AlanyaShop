@@ -326,6 +326,13 @@ h4 {
   padding: 0 40px;
 }
 
+/* #onMenu {
+  font-size: 35px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+} */
+
 #onMenu {
   font-size: 35px;
   color: white;
@@ -333,6 +340,35 @@ h4 {
   cursor: pointer;
   display: none;
 }
+#onMenu .bar {
+  background: floralwhite;
+  width: 50px;
+  height: 10px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+#onMenu .bar:not(:first-child) {
+  margin-top: 10px;
+}
+.onMenu:hover .bar {
+  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.5);
+}
+
+#onMenu.active .bar:nth-child(1) {
+  margin-top: 20px;
+  transform: rotate(-45deg);
+}
+
+#onMenu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#onMenu.active .bar:nth-child(3) {
+  margin-top: -30px;
+  transform: rotate(45deg);
+}
+
 /* Handy */
 @media only screen and (max-width: 800px) {
   .header-navbar ul {
@@ -365,12 +401,14 @@ h4 {
   }
   .logo h2 {
     font-size: medium;
-    padding: 5px;
+    padding: 15px;
     letter-spacing: 5px;
-    border: 3px solid #295112;
+    border: 3px solid #fcfffb;
     border-radius: 20px;
     transition: 1s;
     font-family: "Lobster", cursive;
+    transition: 2s;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
   }
   .navbar-text {
     margin-top: 250px;
