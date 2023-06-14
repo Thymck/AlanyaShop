@@ -4,3 +4,4 @@ document.getElementById("onMenu").addEventListener("click", function () {
   menuItems.classList.toggle("active");
   iconTimes.classList.toggle("active");
 });
+// Deneme
