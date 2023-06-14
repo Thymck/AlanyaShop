@@ -13,12 +13,16 @@ a:visited {
   text-decoration: none;
   outline: none;
   border: none;
-  color: aliceblue;
-  font-size: 30px;
-  font-family: "Merriweather", serif;
+  color: #91a716;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
 }
+/* a,
+a:link,
+a:visited:nth-child(5) {
+  color: #a87414;
+} */
 
-ul,
 li {
   list-style: none;
 }
@@ -30,11 +34,12 @@ li {
 }
 
 .header {
-  background-image: url("./pictures/avacado1.jpg");
+  /* background-image: url("./pictures/avacado1.jpg"); */
+  background-color: white;
   background-position: center;
   background-size: 80%;
   background-attachment: fixed;
-  height: 100vh;
+  height: 80vh;
 }
 
 .header-navbar {
@@ -49,7 +54,7 @@ ul {
 }
 
 ul a:hover {
-  background-color: #6d7568;
+  background-color: #112903;
   border-radius: 10px;
   padding: 8px;
 }
@@ -57,13 +62,16 @@ ul a:hover {
 li {
   margin-left: 50px;
 }
+.log img {
+  width: 50px;
+}
 
 .logo h2 {
   font-size: medium;
   letter-spacing: 5px;
   transition: 1s;
-  color: aliceblue;
-  font-size: 40px;
+  color: #91a716;
+  font-size: 20px;
   font-family: "Lobster", cursive;
 }
 
@@ -80,31 +88,40 @@ li {
   flex-direction: column;
 }
 
+.navbar-text img {
+  margin-top: 10px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
 h1 {
   margin-top: 150px;
   font-size: 3rem;
-  color: rgb(232, 231, 236);
   font-weight: 100;
-  color: #eff1f1;
+  color: #91a716;
   font-family: "Lobster", cursive;
+  letter-spacing: 5px;
 }
 
 h3 {
-  font-size: 40px;
-  color: rgb(232, 231, 236);
+  font-size: 10px;
+  color: #91a716;
+  margin-top: 10px;
   margin-bottom: 22px;
-  font-family: "Lobster", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
 .btn-more {
   position: relative;
   display: inline-block;
-  color: #e3e9e9;
-  background-color: darkblue;
+  color: #ffffff;
+  background-color: #91a716;
   padding: 10px 15px;
   border-top-left-radius: 35px;
   border-bottom-right-radius: 30px;
   overflow: hidden;
+  width: 150px;
+  height: 50px;
 }
 
 .btn-more::after {
@@ -112,7 +129,7 @@ h3 {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: #91a716;
   width: 100%;
   height: 100%;
   display: flex;
@@ -128,6 +145,8 @@ h3 {
 /* About */
 .about {
   margin-bottom: 150px;
+  background-color: #b8c66a;
+  border-radius: 20px;
 }
 
 .about-title {
@@ -138,7 +157,7 @@ h3 {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  color: brown;
+  color: rgb(247, 247, 247);
   font-size: 30px;
   font-weight: 600;
 }
@@ -147,7 +166,7 @@ h3 {
   content: "";
   width: 30px;
   height: 3px;
-  background-color: brown;
+  background-color: rgb(233, 230, 230);
   margin: 0 auto;
   display: block;
   margin-top: 10px;
@@ -368,13 +387,20 @@ h4 {
   margin-top: -30px;
   transform: rotate(45deg);
 }
+.about h4 {
+  font-size: large;
+  letter-spacing: 5px;
+}
+.about p {
+  margin-bottom: 30px;
+}
 
 /* Handy */
 @media only screen and (max-width: 800px) {
   .header-navbar ul {
     display: none;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 0;
     background-color: rgb(11, 49, 33);
     border-radius: 20px;
@@ -385,6 +411,8 @@ h4 {
     display: block;
     max-height: 500px;
     padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   #onMenu {
@@ -397,8 +425,9 @@ h4 {
   }
   .header-navbar ul li {
     padding: 5px;
-    font-size: medium;
+    font-size: 10px;
   }
+
   .logo h2 {
     font-size: medium;
     padding: 15px;
@@ -408,18 +437,29 @@ h4 {
     transition: 1s;
     font-family: "Lobster", cursive;
     transition: 2s;
+    color: #ececec;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    background-color: #112903;
+  }
+  .logo2 img {
+    display: none;
   }
   .navbar-text {
     margin-top: 250px;
   }
   .navbar-text h1 {
-    font-size: 40px;
+    display: none;
+    font-size: 20px;
     font-family: "Lobster", cursive;
+    color: #757373;
+  }
+  .navbar-text h3 {
+    font-size: 20px;
   }
   a.btn-more {
     width: 100px;
     font-size: 15px;
+    color: white;
   }
   .header {
     background-image: url("./pictures/avacado1.jpg");
